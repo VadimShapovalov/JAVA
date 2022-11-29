@@ -8,12 +8,13 @@
 // Сформируйте новую строку, используя StringBuilder. Значения null не включаются в запрос.''''
 
 package com.example;
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Ex_2_1 {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         FileReader reader = new FileReader("text_1.txt");
         Scanner scanner = new Scanner(reader);
         StringBuilder strB = new StringBuilder();
